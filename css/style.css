@@ -175,11 +175,27 @@ aside{
     height: 100%;
     overflow-y: auto;
 }
+.top-info-n{
+    position: absolute;
+    padding: 130px 0 100px 200px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
 .top-info-main{
     background-color: #141922;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 10px 20px;
+}
+.top-info-main-n{
+    background-color: #141922;
+}
+.top-info-main-n h2{
+    color: white;
     padding: 10px 20px;
 }
 .top-info a{
@@ -192,8 +208,41 @@ aside{
     display: inline-block;
 }
 .underline-lime{
-
+     
 }
+/* \MAIN TOP CARD COL */
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-col{
+    width: calc(100% / 6);
+    padding: 10px 20px;
+}
+.card-size-img{
+    width: 200px;
+    height: 200px;
+}
+.card-size-img img{
+    width: 100%;
+    display: block;
+}
+.my-col h4{
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+.my-col p{
+    color: white;
+    text-align: center;
+}
+.middle-info-main p,
+.bottom-info-main p {
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
 
 /* FOOTER */
 footer{
@@ -220,7 +269,9 @@ footer{
     align-items: center;
 }
 /* footer-left */
-
+.footer-left{
+    width: 30%;
+}
 .footer-left .cover-img{
     display: flex;
     align-items: center;
@@ -247,11 +298,15 @@ footer{
     display: block;
     margin-bottom: 10px;
 }
-.icon span i{
+.icon i{
     color: #84868A;
+    padding-left: 15px;
 }
 
 /* footer-center */
+.footer-center{
+    width: 60%;
+}
 .footer-center{
     flex-direction: column;
 }
@@ -274,6 +329,9 @@ footer{
 
 
 /* footer right */
+.footer-right{
+    width: 30%;
+}
 footer .footer-right{
     justify-content: flex-end;
 }
