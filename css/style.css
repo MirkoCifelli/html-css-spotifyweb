@@ -13,12 +13,159 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+/* main{
+    height: calc(100vh - 100px);
+    display: flex;
+} */
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
+/* header */
+header{
+    background-color: #181821;
+    opacity: 0.9;
+    min-height: 100px;
+    width: calc(100% - 200px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+header div{
+    text-align: end;
+    margin-top: 30px;
+}
 
+/* sidebar */
+aside{
+    background-color: black;
+    color: white;
+}
+.sidebar{
+    width: 200px;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.install{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.page{
+    padding-bottom: 20px;   
+}
+
+.logo{
+    padding-top: 20px;
+    padding-bottom: 20px;  
+}
+.playlist{
+    position: relative;
+    padding-bottom: 20px;
+}
+.playlist li{
+    display: flex;
+    align-items: center;
+    gap: 10px;   
+}
+.page li{
+    padding-bottom: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.page .white-color a{
+    color: white;
+}
+
+.sidebar li a{
+    text-decoration: none;
+    color: #84868A;
+}
+.playlist i {
+    font-size: 40px;
+    color: #84868A;
+}
+.playlist p{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.playlist li{
+    padding-bottom:30px ;
+    list-style: none;
+}
+.logo h1{
+    display: inline-block;
+    font-size: 30px;
+}
+.logo i {
+    font-size: 30px;
+}
+.lists{
+    height: 40vh;
+}
+.page img,
+.profile img{
+    width: 15px;
+}
+.install-app{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.install-app img{
+    width: 40px;
+    padding-right: 1rem;
+    
+}
+.install li {
+    list-style: none;
+}
+.profile {
+    margin-top: 10px;
+    border-top: 1px solid #84868A; 
+    padding: 20px 10px;
+}
+.profile span{
+    color: white;
+}
+/* MAIN TOP INFO */
+/* .top-info{
+    height:calc(100% - 100px);
+    width: calc(100vh - 100px);
+} */
+.top-info{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #141922;
+}
+.top-info a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: #84868A;
+}
 
 /* FOOTER */
 footer{
@@ -66,15 +213,14 @@ footer{
 .cover-img span{
     font-size: small;
     display: block;
-    color: grey;
+    color: #84868A;
 }
 .icon span{
     display: block;
     margin-bottom: 10px;
 }
 .icon span i{
-    color: grey;
-    cursor: pointer;
+    color: #84868A;
 }
 
 /* footer-center */
