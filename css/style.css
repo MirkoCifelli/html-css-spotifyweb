@@ -23,7 +23,9 @@
 /* GENERAL */
 footer{
   height: 100px;
-  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  background-color: #282828;
 }
 
 #wrapper{
@@ -33,11 +35,12 @@ footer{
 }
 aside{
   width: 200px;
-  border: 1px dashed yellow;
+  background-color: black;
+  /* border: 1px dashed yellow; */
 }
 main{
   width: calc(100% - 200px);
-  border: 1px dashed yellow;
+  /* border: 1px dashed yellow; */
   height: 100%;
   
 }
@@ -117,4 +120,78 @@ header{
     padding-left: 10px;
     margin-top: 10px;
     font-size: 15px;
+}
+
+
+/*  FOOTER*/
+.footer-left{
+    display: flex;
+    width: 20%;
+    padding: 0px 25px;
+}
+.footer-center{
+    width: 60%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+.footer-right{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cover-img{
+    width: 50px;
+    height: 50px;
+}
+.cover-img p{
+    color: white;
+    margin-left: 10px;
+}
+.cover-img span{
+    color: #76787D;
+    font-weight: small;
+}
+.icon,
+.play-icon i,
+.volume-setting i{
+    color: white;
+    padding: 20px 10px;
+}
+.play-line{
+    height: 2px;
+    background-color: lightgreen;
+    width: 100%;
+}
+.volume-line{
+    height: 2px;
+    background-color: lightgreen;
+    width: 100%;
+}
+
+
+
+/* MEdia QUERIES */
+@media screen and (max-width: 1100px) {
+    .card{
+        width: calc((100% / 4) - 20px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card{
+        width: calc((100% / 2) - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aside{
+        width: 80px;
+    }
+    main,
+    header{
+        width: calc(100% - 104px);
+    }
 }
