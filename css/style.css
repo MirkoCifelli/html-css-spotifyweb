@@ -59,6 +59,9 @@ header{
   overflow: auto;
 }
 /* aside */
+nav{
+    margin-bottom: 20px;
+}
 .logo-small{
     display: none;
 }
@@ -111,6 +114,12 @@ header{
     margin-bottom: 10px;
 }
 /* nav */
+#music span{
+    border-bottom: 2px solid lawngreen;
+}
+.on span{
+    color: white;
+}
 #music > nav > ul{
     display: flex;
     justify-content: center;   
@@ -125,7 +134,7 @@ header{
     color: #76787D;
 }
 .info-app{
-    width: 200px;
+    width: 190px;
     /* height: 100px; */
     border-top: 1px solid grey;
 }
@@ -140,11 +149,15 @@ header{
 .info-app span:last-child{
     color: white;
 }
+.icon i{
+    color: #76787D;
+}
 
 .da-obsolu{
     position: absolute;
     bottom: 0;
     left: 0;
+    padding-left: 10px;
 }
 
 /* MUSIC */
@@ -183,11 +196,37 @@ header{
     margin-top: 10px;
     font-size: 15px;
 }
-
-
+/* IMG OVERLEY */
+/* HOVER */
+.button:hover{
+    transform: scale(1.1);
+}
+.fa-circle-play:hover{
+    transform: scale(1.1);
+}
+.cover-info p:last-child:hover{
+    color: white;
+}
+.icon i:hover{
+    color: white;
+}
+.install-app:hover{
+    color: white;
+}
+nav ul li:hover{
+    color: white;
+}
+.playlist li:hover{
+    color: whitesmoke;
+}
+.list-nav li:hover{
+    color: white;
+}
 /*  FOOTER*/
 
 .footer-left{
+    display: flex;
+    align-items: center;
     width: 20%;
     padding: 0px 25px;
 }
@@ -199,20 +238,23 @@ header{
     text-align: center;
 }
 .footer-right{
-    width: 20%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     
 }
 .cover-img{
     width: 50px;
     height: 50px;
 }
-.cover-img p{
+.cover-info p{
     color: white;
-    margin-left: 10px;
+    margin-left: 5px;
 }
-.cover-img span{
+.cover-info p:last-child{
     color: #76787D;
-    font-weight: small;
+    margin-left: 5px;
 }
 .icon,
 .play-icon i,
@@ -222,20 +264,42 @@ header{
 }
 .play-line{
     height: 2px;
-    background-color: lightgreen;
+    background-color: #76787D;
     width: 100%;
 }
 .volume-line{
     height: 2px;
-    background-color: lightgreen;
-    width: 20%;
+    background-color: #76787D;
+    /* width: 20%; */
+    display: flex;
+    width: 200px;
 }
 .line{
     display: flex;
     align-items: center;
     height: 20px;
 }
-
+.white-bar{
+    width: 40px;
+    height: 3px;
+    color: white;
+    background-color: white;
+}
+.line span{
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.test-new{
+    width: 100px;
+    height: 2px;
+}
+.volume-bar{
+    width: 40px;
+    height: 3px;
+    color: white;
+    background-color: white;
+}
 
 
 /* MEdia QUERIES */
@@ -243,12 +307,31 @@ header{
     .card{
         width: calc((100% / 4) - 20px);
     }
+    .cover-img img{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .card{
         width: calc((100% / 2) - 20px);
     }
+    .cover-img img{
+        width: 50px;
+        height: 50px;
+    }
+    .test-new{
+        width: 60px;
+        height: 2px;
+    }
+    .volume-bar{
+        width: 3px;
+        height: 3px;
+        color: white;
+        background-color: white;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -296,5 +379,9 @@ header{
     }
     .install-app{
         padding: 10px 30px;
+    }
+    .cover-img img{
+        width: 50px;
+        height: 50px;
     }
 }
