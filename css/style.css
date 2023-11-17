@@ -36,6 +36,7 @@ footer{
 aside{
   width: 200px;
   background-color: black;
+  position: relative;
   /* border: 1px dashed yellow; */
 }
 main{
@@ -120,7 +121,31 @@ header{
 .on{
     border-left: 2px solid lawngreen;
 }
+.install-app{
+    color: #76787D;
+}
+.info-app{
+    width: 200px;
+    /* height: 100px; */
+    border-top: 1px solid grey;
+}
+.info-app img{
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+.info-app span{
+    color: #76787D;
+}
+.info-app span:last-child{
+    color: white;
+}
 
+.da-obsolu{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
 /* MUSIC */
 .my-row{
@@ -203,7 +228,12 @@ header{
 .volume-line{
     height: 2px;
     background-color: lightgreen;
-    width: 100%;
+    width: 20%;
+}
+.line{
+    display: flex;
+    align-items: center;
+    height: 20px;
 }
 
 
@@ -222,7 +252,7 @@ header{
 }
 
 @media screen and (max-width: 600px) {
-    .aside{
+    aside{
         width: 80px;
     }
     main,
@@ -253,5 +283,18 @@ header{
     }
     .playlist{
         display: none;
+    }
+    .install-app span{
+        display: none;
+    }
+    .info-app{
+        padding: 10px 30px;
+        border: none;
+    }
+    .info-app span{
+        display: none;
+    }
+    .install-app{
+        padding: 10px 30px;
     }
 }
