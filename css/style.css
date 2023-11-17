@@ -57,7 +57,22 @@ header{
   height: 100%;
   overflow: auto;
 }
+/* aside */
+.logo-small{
+    display: none;
+}
 
+.list-nav img{
+    width: 30px;
+    height: 30px;
+    display: inline;
+    vertical-align: middle;
+    margin: 3px 0;
+    padding-left: 3px;
+}
+.list-nav span{
+    color: #76787D;
+}
 
 /* HEADER */
 header{
@@ -124,8 +139,8 @@ header{
 
 
 /*  FOOTER*/
+
 .footer-left{
-    display: flex;
     width: 20%;
     padding: 0px 25px;
 }
@@ -138,9 +153,7 @@ header{
 }
 .footer-right{
     width: 20%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    
 }
 .cover-img{
     width: 50px;
@@ -193,5 +206,21 @@ header{
     main,
     header{
         width: calc(100% - 104px);
+    }
+    .logo{
+        display: none;
+    }
+    .logo-small{
+        display: inline-block;
+        padding: 10px 10px;
+        
+    }
+    .list-nav span{
+        display: none;
+    }
+    .list-nav img{
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
     }
 }
