@@ -358,7 +358,7 @@ border-radius: 50%;
     }
     main,
     header{
-        width: calc(100% - 104px);
+        width: calc(100% - 80px);
     }
     .logo{
         display: none;
