@@ -1,353 +1,77 @@
-/* 
-    RESET
-*/
+/****************************
+ * DESKTOP FIRST
+****************************/
+
+/* GENERAL SETTINGS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* 
-    GENERAL
-*/
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
-/* main{
-    height: calc(100vh - 100px);
-    display: flex;
-} */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-/* header */
-header{
-    background-color: #181821;
-    opacity: 0.9;
-    min-height: 100px;
-    width: calc(100% - 200px);
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-header a{
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 1px solid white;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 20px;
-}
-header div{
-    text-align: end;
-    margin-top: 30px;
-}
-
-/* sidebar */
-aside{
-    background-color: black;
-    color: white;
-}
-.sidebar{
-    width: 200px;
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.install{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-}
-.page{
-    padding-bottom: 20px;   
-}
-
-.logo{
-    padding-top: 20px;
-    padding-bottom: 20px;  
-}
-.playlist{
-    position: relative;
-    padding-bottom: 20px;
-}
-.playlist li{
-    display: flex;
-    align-items: center;
-    gap: 10px;   
-}
-.page li{
-    padding-bottom: 20px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.page .white-color a{
-    color: white;
-}
-
-.sidebar li a{
-    text-decoration: none;
-    color: #84868A;
-}
-.playlist i {
-    font-size: 40px;
-    color: #84868A;
-}
-.playlist p{
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-.playlist li{
-    padding-bottom:30px ;
-    list-style: none;
-}
-.logo h1{
-    display: inline-block;
-    font-size: 30px;
-}
-.logo i {
-    font-size: 30px;
-}
-.lists{
-    height: 40vh;
-}
-.page img,
-.profile img{
-    width: 15px;
-}
-.install-app{
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-}
-.install-app img{
-    width: 40px;
-    padding-right: 1rem;
-    
-}
-.install li {
-    list-style: none;
-}
-.profile {
-    margin-top: 10px;
-    border-top: 1px solid #84868A; 
-    padding: 20px 10px;
-}
-.profile span{
-    color: white;
-}
-/* MAIN TOP INFO */
-/* .top-info{
-    height:calc(100% - 100px);
-    width: calc(100vh - 100px);
-} */
-/* .top-info{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #141922;
-} */
-/* .flex-groW{
-    position: relative;
-    flex-grow: 1;
-} */
-
-.top-info{
-    position: absolute;
-    /* padding: 110px 20px 20px; */
-    padding: 100px 0 100px 200px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-}
-.top-info-n{
-    position: absolute;
-    padding: 130px 0 100px 200px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-}
-.top-info-main{
-    background-color: #141922;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-}
-.top-info-main-n{
-    background-color: #141922;
-}
-.top-info-main-n h2{
-    color: white;
-    padding: 10px 20px;
-}
-.top-info a{
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 20px;
-    color: #84868A;
-}
-.top-info-main li{
-    display: inline-block;
-}
-.underline-lime{
-     
-}
-/* \MAIN TOP CARD COL */
-.my-row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.my-col{
-    width: calc(100% / 6);
-    padding: 10px 20px;
-}
-.card-size-img{
-    width: 200px;
-    height: 200px;
-}
-.card-size-img img{
+  }
+  img{
     width: 100%;
     display: block;
-}
-.my-col h4{
-    color: white;
-    text-align: center;
-    padding: 10px 10px;
-}
-.my-col p{
-    color: white;
-    text-align: center;
-}
-.middle-info-main p,
-.bottom-info-main p {
-    color: white;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-
-/* FOOTER */
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+     color: inherit;
+     text-decoration: none;
+    }
+/* GENERAL */
 footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    background-color: #282828;
-    padding: 20px 0 10px 0;
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
+  height: 100px;
+  background-color: aqua;
 }
 
-.footer-left,
-.footer-center,
-.footer-center .play-icon,
-.footer-center .line,
-.footer-right,
-.footer-right .volume-setting
-{
+#wrapper{
+  height: calc(100vh - 100px);
+  display: flex;
+  background-color: violet;
+}
+aside{
+  width: 200px;
+  border: 1px dashed yellow;
+}
+main{
+  width: calc(100% - 200px);
+  border: 1px dashed yellow;
+  height: 100%;
+  
+}
+header{
+  width: calc(100% - 200px);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: grey;
+}
+#music{
+  padding: 80px 10px 0;
+  height: 100%;
+  overflow: auto;
+}
+
+/* nav */
+#music > nav > ul{
     display: flex;
+    justify-content: center;   
     gap: 20px;
-    align-items: center;
-}
-/* footer-left */
-.footer-left{
-    width: 30%;
-}
-.footer-left .cover-img{
-    display: flex;
-    align-items: center;
-}
-.cover-img img{
-    width: 6rem;
-    margin-right: 10px;
-}
-.cover-img > p{
-    color: white;
-}
-.cover-img p{
-   font-size: 15px;
-}
-.cover-img p:hover{
-    text-decoration: underline;
-}
-.cover-img span{
-    font-size: small;
-    display: block;
-    color: #84868A;
-}
-.icon span{
-    display: block;
-    margin-bottom: 10px;
-}
-.icon i{
-    color: #84868A;
-    padding-left: 15px;
-}
-
-/* footer-center */
-.footer-center{
-    width: 60%;
-}
-.footer-center{
-    flex-direction: column;
-}
-.footer-center .play-icon,
-.footer-center .line span {
-    color: white;
-}
-.line .play-line{
-    height: 7px;
-    width: 400px;
-    background-color:grey ;
-    border-radius: 20px;
-}
-.white-bar{
-    background-color: lightgray;
-    height: 7px;
-    width: 100px;
-    border-radius: 20px;
 }
 
 
-/* footer right */
-.footer-right{
-    width: 30%;
+/* MUSIC */
+.my-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px -10px 0;
 }
-footer .footer-right{
-    justify-content: flex-end;
-}
-.volume-setting .volume-line{
-    display: inline-block;
-    height: 7px;
-    width: 200px;
-    background-color: grey;
-    border-radius: 20px;  
-}
-.volume-setting i{
-    color: white;
-}
-.volume-bar{
-    background-color: lightgray;
-    height: 7px;
-    width: 50px;
-    border-radius: 20px;
+.card{
+  width: calc(100% / 6 - 20px);
+  padding: 10px;
+  margin: 0 10px;
+  background-color: yellow;
 }
