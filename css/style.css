@@ -380,6 +380,12 @@ border-radius: 50%;
         color: white;
         background-color: white;
     }
+    .footer-left{
+        width: 30%;
+    }
+    .footer-right{
+        width: 50%;
+    }
 
 }
 
