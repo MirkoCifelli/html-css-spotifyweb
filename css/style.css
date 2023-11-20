@@ -26,6 +26,7 @@ footer{
   display: flex;
   justify-content: space-between;
   background-color: #282828;
+  position: relative;
 }
 
 #wrapper{
@@ -105,9 +106,12 @@ header{
 }
 .playlist{
     color: #76787D;
+    height: 200px;
+    overflow: auto;
     
 }
 .playlist li i {
+   margin-top: 20px;
    margin-left: 5px;
 }
 .margin-top{
